@@ -16,6 +16,6 @@ public class SpringServiceApplication {
 
     @GetMapping("/greet")
     public String sayHi() {
-        return "Hello from v1";
+        return "Hello from v3";
     }
 }

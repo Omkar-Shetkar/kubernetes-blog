@@ -8,14 +8,14 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: spring-service-v1
+      app: spring-service
   template:
     metadata:
       labels:
-        app: spring-service-v1
+        app: spring-service
     spec:
       containers:
         - name: spring-service-container
-          image: omkarshetkar/spring-service:v1
+          image: omkarshetkar/spring-service:v3
           ports:
             - containerPort: 8080
