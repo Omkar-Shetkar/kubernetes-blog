@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   labels:
-    run: spring-service-v1
+    app: spring-service-v1
   name: spring-service
   namespace: default
 spec:
