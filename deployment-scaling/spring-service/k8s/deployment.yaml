@@ -1,12 +1,11 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
-  name: spring-service-rs
+  name: spring-service-deployment
   labels:
-    app: spring-service-rs
+    app: spring-service-deployment
 spec:
-  # modify replicas according to your case
-  replicas: 4
+  replicas: 3
   selector:
     matchLabels:
       app: spring-service-v1
