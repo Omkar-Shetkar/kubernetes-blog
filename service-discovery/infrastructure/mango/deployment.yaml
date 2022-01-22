@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mango
+  labels:
+    app: mango-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mango-app
+  template:
+    metadata:
+      labels:
+        app: mango-app
+    spec:
+      containers:
+        - name: mango
+          image: omkarshetkar/mango:latest
+          ports:
+            - containerPort: 8082

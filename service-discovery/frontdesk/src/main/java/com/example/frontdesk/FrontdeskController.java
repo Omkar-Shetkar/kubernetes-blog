@@ -18,7 +18,7 @@ public class FrontdeskController {
 
     @GetMapping("/apple")
     public String getAppleJuice() {
-        String response = restTemplate.getForObject("http://appler-service:8081/juice", String.class);
+        String response = restTemplate.getForObject("http://apple-service:8081/juice", String.class);
         return response;
     }
 }
