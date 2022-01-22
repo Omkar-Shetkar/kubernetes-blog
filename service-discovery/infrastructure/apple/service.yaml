@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: apple-service
+spec:
+  selector:
+    app: apple-app
+  ports:
+    - protocol: TCP
+      port: 80 # Port on which service will receive the traffic
+      targetPort: 8081 # Port exposed by pod onto which service delivers/receives the traffic
