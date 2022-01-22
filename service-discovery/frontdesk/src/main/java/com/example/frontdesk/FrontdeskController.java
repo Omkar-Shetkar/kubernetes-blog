@@ -12,8 +12,8 @@ public class FrontdeskController {
     private RestTemplate restTemplate;
 
     @GetMapping("/")
-    public String hello() {
-        return "Hello World!";
+    public String welcome() {
+        return "Welcome to K8S Juice Center!";
     }
 
     @GetMapping("/apple")
